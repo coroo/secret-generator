@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Simple Random HEX Color Picker</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="section" id="mainSection">
+	<div class="wrapper">
+		<article class="card">
+			<h1 class="title title-medium">
+				Secret: <span id="pickColor"><br/>...</span>
+			</h1>
+		</article>
+		<div class="button">
+			<!-- <button type="button" class="btn btn-primary" id="pickButton">Pick Your Color</button> -->
+			<input id="pickPassword" type="text" class="btn btn-primary" autofocus placeholder="Enter Password" required autocomplete="off">
+			<button type="button" class="btn btn-primary btn-text-transform" id="copyButton" title="Copy Your Color">
+				<i class="fas fa-copy"></i>
+			</button>
+		</div>
+	</div>
+</section>
+<!-- partial -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
